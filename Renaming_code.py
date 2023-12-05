@@ -1,10 +1,32 @@
-"""
-Code to rename images from DamCams
-For questions: Ignacio Aguirre (ignacio.aguirre@usask.ca)
-Date: November, 11, 2022
-Version: 3.0
-Python version >3.7
-"""
+!/usr/bin/env python
+#
+#
+# MODULE        : Renaming_code.py
+# AUTHOR(S)     : Aguirre, I., Hood, G., Westbrook, C.
+# PURPOSE       : Rename RECNX files
+#               
+# COPYRIGHT     : Aguirre, I., Hood, G., Westbrook, C.
+# DATE          : November 11, 2022.
+# Version       : 3.0
+# Python        : >3.7
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 3
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, see <http://www.gnu.org/licenses/>.
+#
+#
+
+
+
 import numpy as np
 import pandas as pd
 import os
@@ -131,11 +153,11 @@ def rename_and_report(input_folder, new_folder):
 
 
 # Basic data
-input_g = r'd:\DamsCams_Renaming\Example_Data\Example_Place\Download_1\Place_1\DCIM'  # Input folder
+input_g = r'.\DamsCams_Renaming\Example_Data\Example_Place\Download_1\Place_1\DCIM'  # Input folder
 study_area = 'ED'  # {Sibbald Fen: SF, Example Data: ED} #Code name of the study area
 place = 'Dam0'  # Place
-report_folder = r'd:\DamsCams_Renaming\Example_Data\Reports'  # Folder to save reports
-output_folder = r'd:\DamsCams_Renaming\Example_Data\Renamed\Example_Place'  # Folder to save new renamed data
+report_folder = r'.\DamsCams_Renaming\Example_Data\Reports'  # Folder to save reports
+output_folder = r'.\DamsCams_Renaming\Example_Data\Renamed\Example_Place'  # Folder to save new renamed data
 down_name = 'D1'
 
 l_dir = get_list_all_directories(input_g)
